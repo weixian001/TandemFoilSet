@@ -8,9 +8,7 @@ for k in ${range[@]}
 do
 	cp randomFields_single randomFields_single${k}
 	runFile="randomFields_single${k}"
-	#cp autoSingle_woO_random autoSingle_woO_random${k}
 	sed -i "s/firstnum/${naca1[$k]}/g" $runFile
 	sed -i "s/nnumber/${n[$k]}/g" $runFile
 	nohup ./$runFile > log.random${k} 2>&1 &
-	#nohup ./autoSingle_woO_random${k} > log.random${k} 2>&1 &
 done

@@ -8,7 +8,7 @@ nacaset=(05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25)
 
 simType=(RAS)
 Re=500
-aoa=0
+aoa=0 # or 5
 Resize=1.0
 for k in ${naca1[@]}
 do
